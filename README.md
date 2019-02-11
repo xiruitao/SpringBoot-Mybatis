@@ -127,7 +127,7 @@ spring:
 
 在Run/Debug Configuration下新建一个Maven的配置，例：
 
-![mybatis generator](img/mybatis generator.jpg)
+![mybatis generator](https://github.com/xiruitao/image/blob/images/springboot-mybatis,jpa/mybatis%20generator.jpg?raw=true)
 
 将@EnableAutoConfiguration注解改为@SpringBootApplication，其等价于以默认属性使用@Configuration ， @EnableAutoConfiguration 和@ComponentScan 。最终启动类注解例：
 
@@ -141,7 +141,7 @@ spring:
 
 使用**SpringMVC方式进行开发**，项目结构
 
-![项目结构](img/秒杀项目结构.png)
+![项目结构](https://github.com/xiruitao/image/blob/images/springboot-mybatis,jpa/%E7%A7%92%E6%9D%80%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png?raw=true)
 
 其中***dao层***与***dataobject层***由mybatis自动生成工具生成，dataobject层（负责数据存储到service层的传输）下的类对应数据库对象模型，其中的字段与数据库一一映射，dao层下的类定义对数据库进行交互的方法，在resources的mapping目录下有自动生成dao层对应的配置文件，一起实现对数据库的操作。
 
